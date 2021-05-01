@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/header/opensans-regular.woff) format("woff"), url(../fonts/header/opensans-regular.woff2) format("woff2"), url(../fonts/header/opensans-regular.svg) format("svg"), url(../fonts/header/opensans-regular.eot) format("eot"), url(../fonts/header/opensans-regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/header/roboto-regular.woff) format("woff"), url(../fonts/header/roboto-regular.woff2) format("woff2"), url(../fonts/header/roboto-regular.eot) format("eot"), url(../fonts/header/roboto-regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "Arimo";
+  src: url(../fonts/header/arimo-regular.woff) format("woff"), url(../fonts/header/arimo-regular.woff2) format("woff2"), url(../fonts/header/arimo-regular.eot) format("eot"), url(../fonts/header/arimo-regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: "RussiaLight";
+  src: url(../fonts/header/russia-light-webfont.woff) format("woff"), url(../fonts/header/russia-light-webfont.eot) format("eot"), url(../fonts/header/russia-light-webfont.ttf) format("ttf");
+}
+
+/* header */
+
+header.header {
+    width: 100%;
+    height: 54px;
+}
+
+.header__container {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cd0000;
+}
+
+.header__left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    height: 100%;
+    border-right: 1px solid #960505;
+}
+
+.header__logo img {
+    height: 100%;
+}
+
+.header__menu-links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #960505;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #fff;
+    padding: 0 24px;
+    text-decoration: none;
+    background: transparent;
+    position: relative;
+}
+
+.header__menu-link:nth-child(3) {
+    padding-right: 50px;
+}
+
+.header__menu-link:nth-child(3)::after {
+    content: '';
+    background: transparent url(../images/24.svg) 50% 50% no-repeat;
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    width: 29px;
+    height: 29px;
+}
+
+.header__menu-link:last-child {
+    border-right: none;
+}
+
+.header__menu-link img {
+    height: 100%;
+}
+
+.header__right {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__search-icon {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.header__age {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+@media all and (max-width: 875px) {
+    .header__menu-link:nth-child(1),
+    .header__menu-link:nth-child(2),
+    .header__menu-link:nth-child(3) {
+        display: none;
+    }
+    .header__logo {
+        border-right: none;
+    }
+}
+
+@media all and (max-width: 768px) {
+    header.header {
+        height: 42px;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .header__menu-link:nth-child(4) {
+        display: none;
+    }
+}
+
+
+/* /header */
